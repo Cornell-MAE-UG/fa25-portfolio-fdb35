@@ -1,10 +1,13 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Flynn Basehart - Curriculum Vitae
 permalink: /cv/
 ---
 ## Curriculum Vitae
 
+TODO 
+
+<!-- 
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
@@ -71,4 +74,4 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 #### References
 Available upon request.
 
----
+--- -->

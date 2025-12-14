@@ -8,11 +8,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : Your Name
+title                    : Flynn Basehart
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : Your Name
-description              : Your Name - Projects and CV 
+name                     : Flynn Basehart
+description              : Flynn Basehart - Projects and CV 
 baseurl                  : "" # Set this to your repo name 
 
 # Theme and Style
@@ -36,6 +36,10 @@ collections:
 markdown: kramdown
 kramdown:
   input: GFM
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
+
 
 # Plugins (previously gems:)
 plugins:
