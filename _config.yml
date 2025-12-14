@@ -13,7 +13,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Flynn Basehart
 description              : Flynn Basehart - Projects and CV 
-baseurl                  : "fdb35" # Set this to your repo name 
+baseurl                  : "" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
