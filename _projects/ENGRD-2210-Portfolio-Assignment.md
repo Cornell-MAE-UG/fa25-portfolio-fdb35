@@ -111,7 +111,7 @@ Now we will evaluate the more complicated case considering the evaporation of wa
 
 {% assign figure_counter = figure_counter | plus: 1 %}
 <figure style="text-align: center; width: 100%;">
-  <img src="{{ '/assets/images/ENGRD2210/Cooling.png' | relative_url }}" 
+  <img src="{{ '/assets/images/ENGRD2210/Evap.png' | relative_url }}" 
        alt="Control volume diagram of cooling tower for evaporation of water" 
        style="width: 100%;">
   <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
@@ -123,6 +123,7 @@ Now we will evaluate the more complicated case considering the evaporation of wa
 Using the same assumptions as above except that steam is no longer negligible and is the sole source of cooling, the 1st law for this device can be written as follows:
 
 $$\dot{E}=\dot{Q}_{tower}-\dot{W}+\dot{m}_{in,resevoir}(h_{res})-\dot{m}_{out,evap}(h_{evap})$$
+
 Assume steady-state conditions such that
 $$\dot{m}_{in,resevoir}=\dot{m}_{out,evap}=\dot{m}_{evap}$$. Therefore,
 
@@ -130,6 +131,7 @@ $$\dot{Q}_{tower}=\dot{m}_{evap}(h_{evap}-h_{res})$$
 
 To estimate $$h_{evap}$$ and $$h_{res}$$, steam tables will be used. To find $$h_{evap}$$, $$h_{fg}$$ at the temperature $$T_{in}=48.2$$°C gives $$h_{evap}\approx2382.7$$ kJ/kgK. Under the assumptions stated, $$h_{res}$$ follows climate data and thus operating conditions change according to season. We will consider the two extremes of January and July. The average temperature in Phoenix in January is 13.5°C and in July is 34.5°C. This gives the corresponding approximated values using saturated liquid enthalpies of $$h_{winter}=54.60$$ and $$h_{summer}=146.68$$ kJ/kgK, respectively. Using $$|Q_{tower}|$$=892MW we get the following evaluations:
 $$h_{evap}$$
+
 $$
 892 \cdot 10^6 = \dot{m}_{\mathrm{evap,winter}} (2382.7 - 54.60) \cdot 10^3 \rightarrow \dot{m}_{\mathrm{evap,winter}} = 383.14 \text{ kg/s}, \quad
 $$
