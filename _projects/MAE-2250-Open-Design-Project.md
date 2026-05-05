@@ -3,7 +3,7 @@ layout: project
 title: MAE 2250 Open Design Project
 description: Class project on client outline for design
 technologies:
-image: /assets/images/MAE2250/DesignSketch.png
+image: /assets/images/MAE2250/gondola.png
 ---
 
 ---
@@ -17,6 +17,8 @@ Our product has evolved iteratively and undergone meaningful changes through our
 ## Table of Contents
 - <span style="font-size: 1.5em;">[Client Outline](#client-outline)</span>
 - <span style="font-size: 1.5em;">[Functional Prototype](#functional-prototype)</span>
+- <span style="font-size: 1.5em;">[Client Report](#client-report)</span>
+
 
 ---
 <a id="client-outline"></a>
@@ -146,3 +148,96 @@ For demonstration purposes, the prototype can be evaluated by pouring a grape-li
 
 ####  Future Improvements/Conclusion:
 The prototype successfully demonstrates a functional and mechanically sound approach to separating grape juice from solids. The system is strong, adjustable, and capable of supporting realistic loads, as evidenced by the rock distribution tests. The use of a hybrid structure combining rigid and flexible elements provides effective load distribution and resilience. Our final design will incorporate an integrated motor system to actively generate controlled oscillations in the tray, enhancing the sifting behavior and improving the separation efficiency between grape juice and solids. By introducing consistent, tunable vibrations, the system will promote faster liquid flow through the perforations while preventing clogging from skins and stems. In addition, the final iteration will utilize aluminum edge trim to securely attach the structure to the field gondola. This will improve overall stability, ensure proper alignment during operation, and make the system more practical for real-world vineyard integration.
+
+---
+
+<a id="client-report"></a>
+<h1 style="color:#000080; font-weight:1200;">Client Report</h1>
+
+#### Context and Problem Statement
+
+The goal of this project is to preserve usable grape juice during harvesting by reducing contamination from spotted lanternflies (SLF). When SLF are collected along with grapes, they vintroduce contamination through the production of honeydew, a sugary waste product that coats fruit and promotes the growth of sooty mold. This contamination can make grapes unsuitable for processing, as affected fruit becomes unmarketable and cannot be used for winemaking (Ambrose and Patel).
+
+As a result, vineyards experience a direct loss of usable product when contaminated grapes must be discarded. In addition, grapes and juice are measured and sold by weight, meaning that every ounce of usable product contributes directly to revenue. Any contamination that reduces the amount of usable fruit therefore results in a measurable financial loss. This issue is significant because SLF infestations have already caused major economic problems for growers by damaging crops and reducing the amount of marketable yield (Ambrose and Patel).
+
+Because of this, improving separation is not just a quality issue, but also an economic one. The key challenge is to separate liquid from solid material in real time while preventing SLF and other contaminants from entering the collected juice. Our team focused on designing a system that performs this separation efficiently while operating under real field constraints. The system must support significant loads, keep up with harvesting rates, be adjustable to different setups, and integrate with a collection gondola. These requirements guided our design and testing approach.
+
+#### Final Prototype and Application
+
+The final prototype consists of a perforated PVC tray supported by an adjustable aluminum frame and stabilized using a cable suspension system, and enhanced with a motor-driven linkage that generates controlled vibrations. The perforated tray acts as the filtration surface, allowing grape juice to pass through while retaining larger solids, including SLF material. The tray is supported by aluminum rods that distribute the load and reduce bending under weight. These rods are connected to a vertical telescoping frame made from aluminum rectangular tubing. The height of each hook can be adjusted using a pin-based locking mechanism, allowing it to adapt to different harvesting setups. A cable system connects the tray to the upper frame, providing tension-based support. This reduces stress on the rods and allows slight controlled motion when the system is loaded. This motion helps absorb impact and improves durability when grapes are dumped onto the tray. The motor linkage system induces controlled vibrations in the tray during operation. These vibrations help prevent grape skins and other solids from clogging the perforations, allowing liquid to pass through more efficiently. This improves filtration performance and increases the amount of usable juice collected. In application, the system is mounted onto a gondola during harvesting. Grapes and SLF are deposited onto the tray, where the vibrating filtration surface allows juice to pass through while retaining grapes and contaminants. This improves both product quality and total usable yield
+
+
+
+<figure style="text-align: center; width: 100%;">
+  <img src="{{ '/assets/images/MAE2250/gondola.png' | relative_url }}" 
+       alt="Harvester and Field Gondola"  
+       style="width: 100%;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
+    <strong>Harvester and Field Gondola</strong>
+  </figcaption>
+</figure>
+
+<figure style="text-align: center; width: 100%;">
+  <img src="{{ '/assets/images/MAE2250/prototypefinal.png' | relative_url }}" 
+       alt="Left: Prototype mounted in mock gondola; Right: view of tray"  
+       style="width: 100%;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
+    <strong>Left: Prototype mounted in mock gondola; Right: view of tray</strong>
+  </figcaption>
+</figure>
+
+#### Conclusion and Recommendation
+
+The final prototype demonstrates a functional and effective approach to reducing contamination and preserving usable grape juice during harvesting. The testing results support the performance of the system across multiple success criteria. The draining flow rate test showed that the perforated tray is capable of 3.26 ounces per second per square inch of liquid to pass through while retaining solids, confirming our first success criteria of fluid-solid separation. The static load test, which supported up to 100 pounds, and the dynamic load test, which supported the impact of 40 bolts each weighing 14.3 gram from a height of 1 meter, both demonstrated the second success criteria of supporting various harvesting loads. In addition, the measured oscillation amplitude of 2 cm and frequency of 1.11 Hz confirmed that the vibration system could reasonably satisfy the final success criteria of achieving a sieving motion in order to better separate fluids and solids and prevent clogging.
+
+Together, these results indicate that the prototype is structurally reliable, stable, and capable of improving filtration efficiency, which directly increases the amount of usable juice collected. Because harvested product is measured by weight, this improvement translates to a clear economic benefit by reducing product loss caused by contamination. While the prototype performs well mechanically, further validation is needed to confirm its effectiveness in removing chemical contamination from SLF. An important next step before full implementation would be chemical testing of the collected juice to verify that contamination has been reduced to acceptable levels.
+
+Based on these results, we recommend continuing development of the design with a focus on improving and refining the vibration system. One key improvement would be integrating a more controlled mechanical actuation system, such as an adjustable motor or linear actuator, to better regulate the amplitude and frequency of oscillation. This would allow the system to adapt to different grape mixtures and moisture conditions, ensuring consistent performance while preventing over- or under-vibration. Improving the actuation mechanism would also increase reliability and allow for more precise tuning of the system in real harvesting environments.In addition, longer-term field testing in vineyard conditions is recommended to evaluate durability, performance consistency, and overall effectiveness during extended use.
+
+#### Detailed Testing Methodology and Outcome:
+##### Draining Flow Rate:
+To evaluate how efficiently liquid could pass through the filtration surface, draining flow rate was tested under two input conditions. In the first test, a water bottle was held directly above the sheet so that the surface stayed flat and the water flowed vertically through the holes. This test measured a flow rate of 3.26 ounces per second per square inch. In the second test, water was poured several inches above the sheet, allowing the flow to spread across the surface more like it would during harvesting. These tests showed that the perforated tray allows liquid to drain while keeping larger solid material on top of the surface. The results support the goal of preserving usable juice while separating out solids and possible SLF contamination.
+
+
+<figure style="text-align: center; width: 100%;">
+  <img src="{{ '/assets/images/MAE2250/watertest.png' | relative_url }}" 
+       alt="Left: view of first test; Right: View of second test"  
+       style="width: 100%;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
+    <strong>Left: view of first test; Right: View of second test</strong>
+  </figcaption>
+</figure>
+
+##### Static Load Capacity:
+To test whether the prototype could support the weight of harvested material, a static load test was conducted. Weight was added to the straining surface until the prototype reached the maximum tested load of 100 pounds. During this test, the system remained structurally sound and did not show failure under the applied load. This result shows that the frame and tray are capable of supporting a significant amount of material, which is important because the device must operate inside a gondola during harvesting.
+
+<figure style="text-align: center; width: 100%;">
+  <img src="{{ '/assets/images/MAE2250/statictest.png' | relative_url }}" 
+       alt="View of capacity test at maximum weight."  
+       style="width: 100%;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
+    <strong>View of capacity test at maximum weight.</strong>
+  </figcaption>
+</figure>
+
+##### Dynamic Load:
+To simulate grapes falling onto the straining surface during harvesting, a dynamic load test was performed by dropping bolts from a height of 1 meter onto the tray. Each bolt weighed 14.3 grams, and 40 bolts were dropped during each trial. The bolts were used to approximate impact loading from falling grapes, which are about 5 grams each. The prototype withstood the repeated impacts without visible failure, showing that the tray and support structure can handle sudden loading during use.
+
+<figure style="text-align: center; width: 100%;">
+  <img src="{{ '/assets/images/MAE2250/dynamictest.png' | relative_url }}" 
+       alt="View of Dynamic Load Test."  
+       style="width: 100%;">
+  <figcaption style="text-align: center; font-size: 0.9em; color: #2b2b2bff;">
+    <strong>View of Dynamic Load Test.</strong>
+  </figcaption>
+</figure>
+
+##### Oscillation Amplitude and Frequency:
+The vibration system was tested by measuring the motion created by the motor-driven linkage. The prototype produced an oscillation amplitude of 2 cm and a frequency of 1.11 Hz. This vibration is important because it helps prevent grape skins and other solids from clogging the holes in the tray. By keeping the surface moving, the system allows juice to continue flowing through the perforations more effectively during harvesting.
+
+##### References
+
+Ambrose, Kevin, and Kasha Patel. “Invasive Spotted Lantern Fly Spreads Across Mid-Atlantic.” The Washington Post, 17 Sept. 2021, p. B2
+
+
+---
